@@ -44,8 +44,8 @@ body{
 }
 /*CSS variables*/
 :root{
-    --primary-color:#10B981;
-    --dark-grey:#374151;
+    --primary-color:#1F2937;
+    --dark-grey:#6B7280;
     --off-white:#F3F4F6;
 }
 
@@ -84,8 +84,9 @@ hr{
     color:white;
     padding:0.2rem;
     padding-left: 1rem;
-    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
     border-bottom-left-radius: 1rem;
+    
 }
 .navigation .link{
     color: white;
@@ -160,8 +161,8 @@ text Within text*/
     text-align: center;
     color: white;
     margin-top:1rem;
-    border-top-left-radius:1rem ;
-    border-bottom-right-radius:1rem ;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
 }
 .footer .link{
     color: white;
