@@ -6,34 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME | Ishan Jirety</title>
     <link rel="stylesheet" href="Styles.css">
+    <script src="/index.js" async></script>
 </head>
 
 <body>
     <!-- Inserting Nav Bar -->
+    <main class="dark-mode" id="dark-mode">
     <nav class="navigation">
         <img src="Images/Me.jpg" class="nav-logo" />
-        <h1 class="nav-brand">Ishan Jirety</h1>
+        <h1 class="nav-brand">Ishan Jirety </h1>
+        <a class="link link-active" id="dark-mode-toggle" style="padding-bottom:0px; padding-top: 0px; display: inline-block;"><img src="/Images/toggleOff.svg" id="toggle-img"></a>
         <ul class="list-non-bullet nav-pills">
-
+            <!-- <li class="list-items-inline">
+                <a class="link link-active" id="dark-mode-toggle"><img src="/Images/toggleOff.svg" id="toggle-img"></a>
+            </li> -->
             <li class="list-items-inline">
-                <a href="/index.html" class="link link-active">Home</a>
+                <a href="/index.html" class="link link-active" id="home">Home</a>
             </li>
             <li class="list-items-inline">
-                <a href="/Projects.html" class="link link-active">Projects</a>
+                <a href="/Projects.html" class="link link-active" id="project">Projects</a>
             </li>
             <li class="list-items-inline">
-                <a href="/Blogs.html" class="link link-active">Blogs</a>
+                <a href="/Blogs.html" class="link link-active" id="blogs">Blogs</a>
             </li>
         </ul>
     </nav>
     <!-- End Of Nav Bar -->
-
+   
     <header class="hero">
         <img src="Images/Hero.svg" alt="" class="hero-img">
         <h1 class="hero-heading">Welcome To My<span class="heading-inverted"> Portfolio</span> </h1>
     </header>
     <!-- End Of Hero -->
-
     <!-- Section Begings -->
     <section class="section">
         <div class="container container-center">
@@ -79,7 +83,7 @@
     <section class="section ">
         <div class="container container-center">
             <h1>Educational qualifications</h1>
-            <p>I am pursuing BCA from<a href="http://www.scs.dauniv.ac.in/" class="link" style="padding:0rem"> the
+            <p>I am pursuing BCA from<a href="http://www.scs.dauniv.ac.in/" class="link link-clg" style="padding:0rem"> the
                     School Of Computer Science & IT, DAVV Indore. </a>I am in the final year of my graduation. Apart
                 from it, I am preparing for CEH & OSCP examination.</p>
         </div>
@@ -112,7 +116,7 @@
             <li class="list-items-inline">Twitter</li>
            </ul>
     </footer>
-
+</main>
 </body>
 
 </html>
